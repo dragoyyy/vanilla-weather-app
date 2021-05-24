@@ -11,7 +11,9 @@
 </head>
 <body>
     <div class="container">
+        <div class="weather-app-wrapper">
         <div class="weather-app">
+        <div class="overview">
   <h1>
       Prague
   </h1>  
@@ -23,13 +25,19 @@
         Clear
     </li>
   </ul>
+</div>
   <div class="row">
       <div class="col-6">
+        <div class="clearfix weather-temperature">
           <img
           src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-          alt="Partly cloudy" />
-        12°C | °F
+          alt="Partly cloudy" 
+          class="float-left"
+          />
+          <span class="float-left"><strong>12</strong><span class="units">°C | °F</span>
+        </span>
         </div>
+  </div>
 <div class="col-6">
     <ul>
       <li>
@@ -44,7 +52,7 @@
     </ul>
     </div>
 </div>
-
+</div>
 <small>
     <a href="https://github.com/dragoyyy/vanilla-weather-app" target="_blank">
     Open-source code</a> by Liza Dragoy
