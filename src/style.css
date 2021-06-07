@@ -3,23 +3,27 @@ body {
 }
 
 h1 {
-  color: black;
+  color: #226b80;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: bold;
   line-height: 28px;
   margin-bottom: 0;
+  position: relative;
+  right: -20px;
 }
 
 ul {
   margin: 0;
   padding: 0;
+  position: relative;
+  right: -20px;
 }
 
 li {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: rgb(112, 117, 122);
+  color: #3e92a3;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -31,6 +35,12 @@ li:first-letter {
 a {
   text-decoration: none;
 }
+small {
+  position: relative;
+  right: -180px;
+  bottom: -20px;
+  color: #3e92a3;
+}
 
 .weather-app-wrapper {
   max-width: 600px;
@@ -38,8 +48,13 @@ a {
 }
 .weather-app {
   padding: 20px;
-  border: 1px solid #d9dce0;
-  border-radius: 5px;
+  border: none;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    181.2deg,
+    #7de2fc 10.5%,
+    rgb(254, 254, 254) 86.8%
+  );
 }
 .overview {
   margin-bottom: 20px;
@@ -47,11 +62,11 @@ a {
 .weather-temperature img {
   margin-right: 5px;
   margin-top: -27px;
-  height: 64px;
-  width: 64px;
+  height: 120px;
+  width: 120px;
 }
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
+  color: #226b80;
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -60,10 +75,12 @@ a {
   position: relative;
   font-size: 16px;
   top: -34px;
+  color: #226b80;
 }
 .weather-temperature .active {
   color: rgb(33, 33, 33);
   cursor: default;
+  color: #226b80;
 }
 .weather-temperature .active:hover {
   text-decoration: none;
@@ -71,7 +88,8 @@ a {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #000;
+  color: #226b80;
+  font-weight: bold;
 }
 .weather-forecast-date {
   font-size: 16px;
@@ -83,3 +101,33 @@ a {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
+
+.btn.btn-primary {
+  background-color: #0c9cee;
+  border: #0c9cee;
+  cursor: pointer;
+  position: relative;
+  right: -20px;
+}
+.btn.btn-primary:hover {
+  background-color: whitesmoke;
+  color: #29cbe8;
+}
+.btn.btn-success {
+  background-color: #1dad9b;
+  border: #1dad9b;
+  cursor: pointer;
+  position: relative;
+  right: -10px;
+}
+.btn.btn-success:hover {
+  background-color: whitesmoke;
+  color: #53a8b6;
+}
+.form-control {
+  border-radius: 5px;
+  position: relative;
+  right: -20px;
+}
+
+/* rgb(181, 239, 249) */
