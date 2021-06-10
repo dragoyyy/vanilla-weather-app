@@ -62,19 +62,22 @@ small {
 .weather-temperature img {
   margin-right: 5px;
   margin-top: -27px;
-  height: 120px;
-  width: 120px;
+  height: 115px;
+  width: 115px;
 }
 .weather-temperature strong {
   color: #226b80;
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
+  position: relative;
+  left: -10px;
 }
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
   top: -34px;
+  left: -10px;
   color: #226b80;
 }
 .weather-temperature .active {
